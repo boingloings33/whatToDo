@@ -21,37 +21,6 @@ ul {
   list-style: none;
 }
 
-.title {
-  text-transform: none;
-  font-size: 78px;
-  color: #f7f7f7;
-}
-
-.container {
-  height: 450px;
-  width: 330px;
-  background: #f7f7f7;
-  border-radius: 5px;
-  box-shadow: 0 0 40px #ca8d31a2;
-  padding: 10px;
-}
-
-#input {
-  height: 50px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background: #555;
-  color: #f7f7f7;
-  padding: 0 10px;
-  margin: 15px 0;
-}
-
-#input::placeholder {
-  color: #d4d4d4;
-}
-
 ul li {
   background-color: #e49d4d;
   color: #333;
@@ -68,6 +37,39 @@ ul .fa-check,
   cursor: pointer;
 }
 
+ul .checked {
+  background: lightgreen;
+  text-decoration: line-through;
+}
+
+.title {
+  text-transform: none;
+  font-size: 78px;
+  color: #f7f7f7;
+  animation: MoveUpDown 1s cubic-bezier(0.4, 0.5, 0.4, 1) infinite;
+  position: absolute;
+  top: 50px;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 90px;
+  }
+  50% {
+    top: 80px;
+  }
+}
+
+.container {
+  height: 450px;
+  width: 330px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 40px #ca8d31a2;
+  padding: 10px;
+}
+
 .fa-check {
   right: 40px;
   color: green;
@@ -78,7 +80,18 @@ ul .fa-check,
   color: rgb(201, 55, 18);
 }
 
-ul .checked {
-  background: lightgreen;
-  text-decoration: line-through;
+#input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #555;
+  color: #f7f7f7;
+  padding: 0 10px;
+  margin: 15px 0;
+}
+
+#input::placeholder {
+  color: #d4d4d4;
 }

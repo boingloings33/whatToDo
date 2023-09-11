@@ -49,7 +49,6 @@ ul .checked {
   animation: MoveUpDown 1s cubic-bezier(0.4, 0.5, 0.4, 1) infinite;
   position: absolute;
   top: 50px;
-  margin-bottom: 72px
 }
 
 @keyframes MoveUpDown {
